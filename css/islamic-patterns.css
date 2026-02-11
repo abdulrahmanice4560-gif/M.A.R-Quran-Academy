@@ -1,0 +1,5 @@
+/* Islamic Patterns [web:9] */
+.section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: repeating-linear-gradient(90deg, var(--gold), var(--gold) 10px, transparent 10px, transparent 20px); }
+.fa-mosque { color: var(--gold); font-size: 3em; animation: glow 2s infinite alternate; }
+@keyframes glow { 0% { text-shadow: 0 0 10px var(--gold); } 100% { text-shadow: 0 0 20px var(--gold), 0 0 30px var(--gold); } }
+.pattern-bg { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon fill="%23d4af37" opacity="0.1" points="50,10 90,30 70,70 30,70 10,30"/></svg>'); }

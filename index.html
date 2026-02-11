@@ -1,0 +1,536 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A.R Quran Academy - Learn Quran Online with Tajweed</title>
+    <meta name="description" content="Professional online Quran learning academy with qualified teachers">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-container">
+            <div class="islamic-loader"></div>
+            <p class="bismillah-text">بسم الله الرحمن الرحيم</p>
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a class="logo" href="index.html" aria-label="M.A.R Quran Academy Home">
+                    <img src="images/logo.png" alt="M.A.R Quran Academy">
+                    <span>M.A.R QURAN ACADEMY</span>
+                </a>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> About
+                    </a>
+                    <a href="courses.html" class="nav-link">
+                        <i class="fas fa-book-open"></i> Courses
+                    </a>
+                    <a href="faq.html" class="nav-link">
+                        <i class="fas fa-question-circle"></i> FAQ
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-phone"></i> Contact
+                    </a>
+
+                    <button class="btn-admission" type="button" data-admission-trigger>
+                        <i class="fas fa-user-plus"></i> Admission
+                    </button>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" title="Toggle Theme" type="button">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="sound-toggle" id="soundToggle" title="Toggle Sound" type="button">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <button class="retro-toggle" id="retroToggle" title="Retro Mode" type="button">
+                        <i class="fas fa-gamepad"></i>
+                    </button>
+                    <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <div class="bismillah">بسم الله الرحمن الرحيم</div>
+                    <h1 class="hero-title">
+                        Learn Quran Online<br>
+                        <span class="gradient-text">With Proper Tajweed</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Professional Quran education for children, youth & adults worldwide
+                        with qualified teachers and modern online systems.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="openAdmissionPopup()">
+                            <i class="fas fa-graduation-cap"></i> Start Free Trial
+                        </button>
+                        <a href="courses.html" class="btn btn-secondary">
+                            <i class="fas fa-book"></i> View Courses
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h3>5000+</h3>
+                                <p>Students</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div>
+                                <h3>50+</h3>
+                                <p>Teachers</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h3>25+</h3>
+                                <p>Countries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="floating-card">
+                        <img src="images/quran-learning.svg" alt="Quran Learning">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Why Choose Us</span>
+                <h2>Our Key Features</h2>
+                <p>Experience excellence in Quranic education</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Qualified Teachers</h3>
+                    <p>Learn from certified Hafiz & Qari with Ijazah</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Timings</h3>
+                    <p>Choose your convenient class schedule</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Online Classes</h3>
+                    <p>Learn from anywhere in the world</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificates</h3>
+                    <p>Get certified upon course completion</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-quran"></i>
+                    </div>
+                    <h3>Tajweed Focus</h3>
+                    <p>Learn proper Quranic pronunciation</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Always here to help you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses -->
+    <section class="section courses-preview">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Courses</span>
+                <h2>Popular Courses</h2>
+                <p>Start your Quranic journey today</p>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <img src="images/noorani-qaida.jpg" alt="Noorani Qaida">
+                        <div class="course-badge">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Noorani Qaida</h3>
+                        <p>Learn Arabic alphabets and basic reading skills</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3-6 Months</span>
+                            <span><i class="fas fa-signal"></i> Basic</span>
+                        </div>
+                        <a href="courses.html#noorani" class="btn-course">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">
+                        <img src="images/quran-reading.jpg" alt="Quran Reading">
+                        <div class="course-badge popular">Popular</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Quran Reading with Tajweed</h3>
+                        <p>Read Quran with proper rules and pronunciation</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6-12 Months</span>
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <a href="courses.html#reading" class="btn-course">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-image">
+                        <img src="images/hifz.jpg" alt="Hifz Program">
+                        <div class="course-badge advanced">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Hifz-ul-Quran Program</h3>
+                        <p>Memorize the complete Holy Quran</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 2-3 Years</span>
+                            <span><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                        <a href="courses.html#hifz" class="btn-course">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="courses.html" class="btn btn-primary">
+                    View All Courses <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Reviews</span>
+                <h2>What Students Say</h2>
+                <p>Real feedback from our beloved students</p>
+            </div>
+            
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Masha'Allah! Excellent teaching method. My daughter learned Noorani Qaida in just 4 months. Very professional and caring teachers."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="images/student1.jpg" alt="Student">
+                        <div>
+                            <h4>Fatima Ahmed</h4>
+                            <p>Parent - Dubai, UAE</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Alhamdulillah! Best online Quran academy. Flexible timings and qualified teachers. Highly recommended for everyone."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="images/student2.jpg" alt="Student">
+                        <div>
+                            <h4>Muhammad Hassan</h4>
+                            <p>Student - London, UK</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "SubhanAllah! My tajweed improved significantly. The one-on-one attention and detailed feedback is amazing. JazakAllah Khair!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="images/student3.jpg" alt="Student">
+                        <div>
+                            <h4>Aisha Malik</h4>
+                            <p>Student - Riyadh, KSA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Start Your Quranic Journey?</h2>
+                <p>Join thousands of students learning Quran online</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-white" onclick="openAdmissionPopup()">
+                        <i class="fas fa-user-plus"></i> Get Free Trial
+                    </button>
+                    <a href="contact.html" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="M.A.R Quran Academy">
+                        <h3>M.A.R QURAN ACADEMY</h3>
+                    </div>
+                    <p>Professional online Quran learning platform with qualified teachers worldwide.</p>
+                    <div class="social-links">
+    <a href="https://www.facebook.com/share/182b9V199R/" target="_blank" aria-label="Facebook Page 1"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.facebook.com/share/1Kizt1XAiX/" target="_blank" aria-label="Facebook Page 2"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/m.a.rquranacademy?igsh=eHQ1djdrcDlxdmFj" target="_blank" aria-label="Instagram Academy"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.instagram.com/hafizmohammedabdul.rahman?igsh=MXBkcWJuMzMwMHZjOQ==" target="_blank" aria-label="Instagram Managing Director"><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com/@marquranacademy-official?si=59RODpJUW_usZ8iR" target="_blank" aria-label="YouTube Official"><i class="fab fa-youtube"></i></a>
+    <a href="https://youtube.com/@m.a.r-quran-academy?si=QFkn3xtNHZ22wNeo" target="_blank" aria-label="YouTube Learning"><i class="fab fa-youtube"></i></a>
+    <a href="https://wa.me/918919381753?text=Assalamu%20Alaikum%20wa%20Rahmatullahi%20wa%20Barakatuh.%0A%0AWe%20are%20interested%20in%20admission%20at%20M.A.R%20Quran%20Academy.%20Please%20share%20details%20about%20courses,%20fees,%20and%20class%20timings.%20JazakAllahu%20Khairan" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="digital-library.html">Digital Library</a></li>
+                        <li><a href="teacher-code.html">Teacher Code</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="instructions.html">Instructions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918919381753">+91 89193 81753</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@marquranacademy.com">info@marquranacademy.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Hyderabad, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 M.A.R Quran Academy. All Rights Reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> for the Ummah</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918919381753?text=Assalamu%20Alaikum%20wa%20Rahmatullahi%20wa%20Barakatuh.%0A%0AWe%20are%20interested%20in%20admission%20at%20M.A.R%20Quran%20Academy.%20Please%20share%20details%20about%20courses,%20fees,%20and%20class%20timings.%20JazakAllahu%20Khairan" 
+       class="whatsapp-float" 
+       target="_blank"
+       title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Need Help?</span>
+    </a>
+
+    <!-- Admission Popup -->
+    <div class="popup-overlay" id="admissionPopup">
+        <div class="popup-container">
+            <button class="popup-close" onclick="closeAdmissionPopup()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="popup-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h2>Start Your Free Trial</h2>
+                    <p>Fill the form below and we'll contact you soon!</p>
+                </div>
+                
+                <form class="admission-form" id="admissionForm" onsubmit="submitAdmission(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" name="name" required placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i> Email *</label>
+                            <input type="email" name="email" required placeholder="your@email.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-phone"></i> WhatsApp Number *</label>
+                            <input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-globe"></i> Country *</label>
+                            <select name="country" required>
+                                <option value="">Select Country</option>
+                                <option value="India">India</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="UAE">UAE</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="UK">UK</option>
+                                <option value="USA">USA</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-book"></i> Select Course *</label>
+                        <select name="course" required>
+                            <option value="">Choose a course</option>
+                            <option value="Noorani Qaida">Noorani Qaida</option>
+                            <option value="Quran Reading">Quran Reading with Tajweed</option>
+                            <option value="Hifz">Hifz-ul-Quran</option>
+                            <option value="Tafseer">Tafseer Course</option>
+                            <option value="Arabic">Arabic Language</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-user-tag"></i> Student Type *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="student_type" value="Kids" required>
+                                <span>Kids (5-12 years)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="student_type" value="Adults">
+                                <span>Adults (13+ years)</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-comment"></i> Message (Optional)</label>
+                        <textarea name="message" rows="3" placeholder="Any specific requirements..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Submit Application
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/sounds.js"></script>
+    <script src="js/secure.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
